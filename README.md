@@ -1,3 +1,6 @@
-mongodb -> database
-express -> framework to create apis
-node js -> to access mongodb
+CRUD rest api using node js 
+
+Tech Stack:
+1.mongodb -> database
+2.express -> web framework to create apis
+3.node js -> to access mongodb
