@@ -2,6 +2,7 @@ const express = require("express")
 const { dbconncetion } = require("./Model/db")
 const router = require("./controllers/routers")
 const app = express()
+require("dotenv").config()
 
 // accept json format
 dbconncetion()
@@ -13,4 +14,4 @@ app.get("/",(req,res)=>{
 
 app.use("/api",router)
 
-app.listen(5000,console.log("server started"))
+app.listen(process.env.PORT,console.log("server started"))
